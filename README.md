@@ -19,6 +19,7 @@ This repository is currently a scaffold:
 - Spec Kit has been initialized locally
 - agent skills were generated into `.agents/skills/`
 - a first feature branch scaffold exists under `specs/001-work-skills-foundation/`
+- canonical repo-local skill specs live under `skills/`
 - the actual Django implementation and Windows-specific LLM wiring are still to
   be built
 
@@ -87,6 +88,21 @@ The first implementation work should be planning-first:
 The repo should not jump directly into Django code until the operating contract
 is written down.
 
+### 4.1 Immediate build order
+
+If you are starting fresh on the corporate machine, use this order:
+
+1. review the constitution in `.specify/memory/constitution.md`
+2. review the phase-1 spec package in `specs/001-work-skills-foundation/`
+3. review the canonical skill specs in `skills/`
+4. finalize any contract changes before scaffolding Django
+5. scaffold `control_plane/` and `tests/`
+6. implement the managed-project contract parser and sync flow
+7. implement `project-next`, `flow-auto`, `qa`, and `cicd-auditor`
+8. only then start onboarding sibling application repos
+
+This is the intended answer to “how do I start building this project?”
+
 ### 5. Build the central control plane inside this repo
 
 The recommended target structure is:
@@ -144,6 +160,22 @@ Recommended order:
 4. add task/worktree orchestration
 5. add QA and audit flows
 6. add skill implementations
+
+### 9. Use the skill specs as the operating guide
+
+The top-level `skills/` directory is the canonical specification for the
+non-Spec-Kit skills in this repo:
+
+- `skills/plan-the-plan/`
+- `skills/project-lite/`
+- `skills/project-next/`
+- `skills/flow-auto/`
+- `skills/qa/`
+- `skills/cicd-auditor/`
+
+These specs define how the future Django control plane and agent workflow are
+expected to behave. Implement the platform to satisfy these skills, rather than
+inventing the process during coding.
 
 ## What This Repo Is For
 
