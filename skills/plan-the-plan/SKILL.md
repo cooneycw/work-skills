@@ -44,9 +44,10 @@ Produce an initiative brief that includes:
 
 After this brief is stable, the normal sequence is:
 
-1. `project-lite`
-2. `grill-me`
-3. `speckit-constitution`
-4. `speckit-specify`
-5. `speckit-plan`
-6. `speckit-tasks`
+1. `project-init`
+2. `project-lite`
+3. `grill-me`
+4. `speckit-constitution`
+5. `speckit-specify`
+6. `speckit-plan`
+7. `speckit-tasks`

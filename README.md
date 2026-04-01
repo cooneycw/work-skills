@@ -96,10 +96,12 @@ If you are starting fresh on the corporate machine, use this order:
 2. review the phase-1 spec package in `specs/001-work-skills-foundation/`
 3. review the canonical skill specs in `skills/`
 4. finalize any contract changes before scaffolding Django
-5. scaffold `control_plane/` and `tests/`
-6. implement the managed-project contract parser and sync flow
-7. implement `project-next`, `flow-auto`, `qa`, and `cicd-auditor`
-8. only then start onboarding sibling application repos
+5. implement `project-init` first so new sibling repos can be brought into the
+   managed-project contract consistently
+6. scaffold `control_plane/` and `tests/`
+7. implement the managed-project contract parser and sync flow
+8. implement `project-next`, `flow-auto`, `qa`, and `cicd-auditor`
+9. only then start onboarding sibling application repos at scale
 
 This is the intended answer to “how do I start building this project?”
 
@@ -167,6 +169,7 @@ The top-level `skills/` directory is the canonical specification for the
 non-Spec-Kit skills in this repo:
 
 - `skills/plan-the-plan/`
+- `skills/project-init/`
 - `skills/project-lite/`
 - `skills/project-next/`
 - `skills/flow-auto/`

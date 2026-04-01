@@ -50,9 +50,11 @@ and required skills from the control cockpit
 
 - [ ] T013 [US1] Implement `plan-the-plan` skill specification and artifact
   outputs in `skills/plan-the-plan/SKILL.md`
-- [ ] T014 [US1] Implement `project-lite` skill specification and brief format
+- [ ] T014 [US1] Implement `project-init` skill specification and managed
+  project bootstrap outputs in `skills/project-init/SKILL.md`
+- [ ] T015 [US1] Implement `project-lite` skill specification and brief format
   in `skills/project-lite/SKILL.md`
-- [ ] T015 [US1] Implement initiative and wave views plus supporting services in
+- [ ] T016 [US1] Implement initiative and wave views plus supporting services in
   `control_plane/apps/portfolio/`
 
 ## Phase 4: User Story 2 - Standardize Managed Project Contracts (Priority: P1)
@@ -65,19 +67,19 @@ without custom project logic
 
 ### Tests For User Story 2
 
-- [ ] T016 [P] [US2] Add contract tests for `.workskills/project.yml`,
+- [ ] T017 [P] [US2] Add contract tests for `.workskills/project.yml`,
   normalized issue exports, and provenance ledgers in
   `tests/contract/test_managed_project_contract.py`
-- [ ] T017 [P] [US2] Add integration tests for project sync and drift detection
+- [ ] T018 [P] [US2] Add integration tests for project sync and drift detection
   in `tests/integration/test_project_sync.py`
 
 ### Implementation For User Story 2
 
-- [ ] T018 [US2] Implement `project-next` selection service and API route in
+- [ ] T019 [US2] Implement `project-next` selection service and API route in
   `control_plane/apps/orchestration/`
-- [ ] T019 [US2] Implement `flow-auto <task_id>` state machine and approval gate
+- [ ] T020 [US2] Implement `flow-auto <task_id>` state machine and approval gate
   handling in `control_plane/apps/orchestration/`
-- [ ] T020 [US2] Implement sample managed-project templates and reference
+- [ ] T021 [US2] Implement sample managed-project templates and reference
   outputs in `docs/examples/`
 
 ## Phase 5: User Story 3 - See Cross-Project Delivery State (Priority: P2)
@@ -89,16 +91,16 @@ portfolio view with clear health differences
 
 ### Tests For User Story 3
 
-- [ ] T021 [P] [US3] Add contract tests for portfolio summary serialization in
+- [ ] T022 [P] [US3] Add contract tests for portfolio summary serialization in
   `tests/contract/test_portfolio_summary.py`
-- [ ] T022 [P] [US3] Add integration tests for portfolio rendering and
+- [ ] T023 [P] [US3] Add integration tests for portfolio rendering and
   filtering in `tests/integration/test_portfolio_views.py`
 
 ### Implementation For User Story 3
 
-- [ ] T023 [US3] Implement project registry, portfolio overview, and project
+- [ ] T024 [US3] Implement project registry, portfolio overview, and project
   detail views in `control_plane/apps/portfolio/`
-- [ ] T024 [US3] Implement local rendered HTML outputs and refresh hooks in
+- [ ] T025 [US3] Implement local rendered HTML outputs and refresh hooks in
   `control_plane/apps/portfolio/`
 
 ## Phase 6: User Story 4 - Control Task Execution Through Gates (Priority: P3)
@@ -111,24 +113,24 @@ when all required evidence is present
 
 ### Tests For User Story 4
 
-- [ ] T025 [P] [US4] Add contract tests for task state transitions and gate
+- [ ] T026 [P] [US4] Add contract tests for task state transitions and gate
   enforcement in `tests/contract/test_task_flow.py`
-- [ ] T026 [P] [US4] Add integration tests for audit-blocked and
+- [ ] T027 [P] [US4] Add integration tests for audit-blocked and
   exception-allowed closure in `tests/integration/test_audit_flow.py`
 
 ### Implementation For User Story 4
 
-- [ ] T027 [US4] Implement `qa` skill specification and evidence logging model
+- [ ] T028 [US4] Implement `qa` skill specification and evidence logging model
   in `skills/qa/SKILL.md`
-- [ ] T028 [US4] Implement `cicd-auditor` skill specification and deterministic
+- [ ] T029 [US4] Implement `cicd-auditor` skill specification and deterministic
   audit engine integration in `skills/cicd-auditor/SKILL.md`
-- [ ] T029 [US4] Implement exception management and expiry handling in
+- [ ] T030 [US4] Implement exception management and expiry handling in
   `control_plane/apps/audit/`
 
 ## Phase 7: Polish & Cross-Cutting Concerns
 
-- [ ] T030 [P] Document operator workflows, onboarding steps, and provenance
+- [ ] T031 [P] Document operator workflows, onboarding steps, and provenance
   rules in `docs/process/`
-- [ ] T031 Validate quickstart flows against the implemented control cockpit
-- [ ] T032 Add regression coverage for next-task ranking, sync drift, and
+- [ ] T032 Validate quickstart flows against the implemented control cockpit
+- [ ] T033 Add regression coverage for next-task ranking, sync drift, and
   provenance blocking behavior

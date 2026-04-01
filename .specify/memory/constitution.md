@@ -85,6 +85,7 @@ The canonical hierarchy for all managed work is:
 The required baseline skill chain is:
 
 - `plan-the-plan`
+- `project-init`
 - `project-lite`
 - `grill-me`
 - `speckit-constitution`
@@ -100,6 +101,8 @@ Workflow requirements:
 
 - `plan-the-plan` MUST frame the initiative before project-specific
   specification begins.
+- `project-init` MUST establish the managed-project contract before a new
+  project enters normal delivery.
 - `project-next` MUST choose dependency-safe highest-value ready work.
 - `flow-auto <task_id>` MUST operate within the task's dedicated worktree.
 - `qa` MUST add or update tests when needed for the active task and MUST log
